@@ -1,0 +1,36 @@
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+}
+td.bold{
+ font-weight:bold;
+}
+p.bolder{
+font-wieght:bolder;
+font-size:large;
+align="center";
+}
+
+
+body.football{
+	background-image:url("fifa.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	
+}
+
+body.confederation{
+	background-image:url("confederation.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
+
+body.women_wc{
+	background-image:url("women-wc.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	
+	
+}

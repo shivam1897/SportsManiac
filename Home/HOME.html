@@ -1,0 +1,123 @@
+<html>
+
+ <head>
+  <title>SPORTS MANIAC</title>
+  <link rel="stylesheet" href="HOME.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ 
+ <body>
+   <table class="tabs" colspan=2>
+     <tr>
+	   <th><a style="text-decoration:none;color:white" href="HOME.html">HOME</th>
+	   <th><a style="text-decoration:none;color:white" href="Trending/TRENDING.html">TRENDING</th>
+	   <th>
+              <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">SPORTS</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a style="font-size:20px;"href="cricket/CRICKET.html"target="_blank">CRICKET</a>
+    <a style="font-size:18px;"href="Basketball/BASKETBALL.html"target="_blank">BASKETBALL</a>
+    <a style="font-size:20px;"href="Football/FOOTBALL2.html"target="_blank">FOOTBALL</a>
+    <a style="font-size:20px;"href="Kabaddi/KABADDI.html"target="_blank">KABADDI</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+           </th>
+	   <th><a style="text-decoration:none;color:white" href="Gossips/GOSSIPS.html">GOSSIPS</th>
+	 </tr>
+   
+   </table>
+   <div class="para1">
+     <p>
+	  Welcome to the home of SPORTS</br>
+        We bring you latest news about diffrent sports played across the world.</br>We Mainly focus on 
+some sports like .
+  <ul>
+      <li>CRICKET</li>
+      <li>FOOTBALL</li>
+      <li>BASKETBALL</li>
+      <li>KABADDI</li>
+</ul>
+	 </p>
+   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="concup.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="womenwc.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="nba.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="pkl.jpg" style="width:100%">
+  <div class="text">Upcoming Thrilling Events</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+</div>
+ </body>
+  
+</html>
